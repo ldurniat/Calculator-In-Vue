@@ -7,26 +7,46 @@
 		<div class="display">
 			{{ current || 0 }}
 		</div>
-	</div> 
-	<div>C</div>
-	<div>+/-</div>
-	<div>%</div>
-	<div>7</div>
-	<div>8</div>
-	<div>9</div>
-	<div>*</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	<div>-</div>
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>+</div>
-	<div>.</div>
-	<div>=</div>
+		<div class="btn">C</div>
+		<div class="btn">+/-</div>
+		<div class="btn">%</div>
+		<div class="btn">/</div>
+		<div class="btn">7</div>
+		<div class="btn">8</div>
+		<div class="btn">9</div>
+		<div class="btn">*</div>
+		<div class="btn">4</div>
+		<div class="btn">5</div>
+		<div class="btn">6</div>
+		<div class="btn">-</div>
+		<div class="btn">1</div>
+		<div class="btn">2</div>
+		<div class="btn">3</div>
+		<div class="btn">+</div>
+		<div class="btn">0</div>
+		<div class="btn">.</div>
+		<div class="btn">=</div>
+		<div class="btn"></div>
+	</div> 	
 </template>
 
 <style scoped>
-
+.calculator {
+	grid-template-columns: repeat(4, 1fr);
+	cursor: pointer;
+	margin: 0 auto;
+	width: 480px;
+	font-size: 40px;
+	display: grid;
+	grid-template-rows: minmax(50px, auto);
+}
+.display {
+	grid-column: 1 / 5;
+	background-color: #333;
+	color: white;
+}
+.btn {
+	background-color: #f2f2f2;
+	border: 1px solid #999;
+}
 </style>
