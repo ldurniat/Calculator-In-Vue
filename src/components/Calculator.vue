@@ -6,6 +6,11 @@ const current = ref('')
 function clear() {
 	current = ''
 }
+
+function sign() {
+	current.value = current.value.charAt(0) === '-'  ? 
+		current.value.slice(1) : `-${current.value}`
+}
 </script>
 
 <template>
