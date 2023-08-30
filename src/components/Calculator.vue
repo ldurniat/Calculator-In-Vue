@@ -11,6 +11,10 @@ function sign() {
 	current.value = current.value.charAt(0) === '-'  ? 
 		current.value.slice(1) : `-${current.value}`
 }
+
+function percent() {
+	current.value = `${parseFloat(current.value)/100}`
+}
 </script>
 
 <template>
@@ -20,7 +24,7 @@ function sign() {
 		</div>
 		<div @click="clear" class="btn">C</div>
 		<div @click="sign" class="btn operator">+/-</div>
-		<div class="btn operator">%</div>
+		<div @click="percent" class="btn operator">%</div>
 		<div class="btn operator">/</div>
 		<div class="btn">7</div>
 		<div class="btn">8</div>
