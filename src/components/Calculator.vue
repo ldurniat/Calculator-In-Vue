@@ -1,5 +1,7 @@
 <script setup>
-
+function clear() {
+	current = ''
+}
 </script>
 
 <template>
@@ -7,7 +9,7 @@
 		<div class="display">
 			{{ current || 0 }}
 		</div>
-		<div class="btn">C</div>
+		<div @click="clear" class="btn">C</div>
 		<div class="btn operator">+/-</div>
 		<div class="btn operator">%</div>
 		<div class="btn operator">/</div>
