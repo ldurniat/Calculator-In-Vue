@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
+const current = ref('')
+
 function clear() {
 	current = ''
 }
