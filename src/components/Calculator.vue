@@ -20,7 +20,7 @@ function append(number) {
 	current.value = `${current.value}${number}`
 }
 
-function dot(number) {
+function dot() {
 	if(current.value.indexOf('.') === -1){
 		append('.')
 	}
