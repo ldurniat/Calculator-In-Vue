@@ -25,6 +25,10 @@ function dot() {
 		append('.')
 	}
 }
+
+function equal() {
+	current.value = eval(current.value)
+}
 </script>
 
 <template>
@@ -50,7 +54,7 @@ function dot() {
 		<div @click="append('+')" class="btn operator">+</div>
 		<div @click="append('0')" class="btn zero">0</div>
 		<div @click="dot" class="btn">.</div>
-		<div class="btn operator">=</div>
+		<div @click="equal" class="btn operator">=</div>
 		<div class="btn"></div>
 	</div> 	
 </template>
