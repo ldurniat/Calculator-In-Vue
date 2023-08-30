@@ -23,7 +23,7 @@
 		<div class="btn">2</div>
 		<div class="btn">3</div>
 		<div class="btn">+</div>
-		<div class="btn">0</div>
+		<div class="btn zero">0</div>
 		<div class="btn">.</div>
 		<div class="btn">=</div>
 		<div class="btn"></div>
@@ -48,5 +48,9 @@
 .btn {
 	background-color: #f2f2f2;
 	border: 1px solid #999;
+}
+
+.zero {
+	grid-column: 1 / 3;
 }
 </style>
