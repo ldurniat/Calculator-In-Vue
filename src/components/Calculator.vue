@@ -29,7 +29,10 @@ function dot() {
 }
 
 function equal() {
+	solve         = current.value + '=' 
 	current.value = eval(current.value)
+	solve         = solve + `${current.value}`
+	history.push(solve)
 }
 </script>
 
