@@ -14,7 +14,7 @@ function clear() {
 			{{ current || 0 }}
 		</div>
 		<div @click="clear" class="btn">C</div>
-		<div class="btn operator">+/-</div>
+		<div @click="sign" class="btn operator">+/-</div>
 		<div class="btn operator">%</div>
 		<div class="btn operator">/</div>
 		<div class="btn">7</div>
