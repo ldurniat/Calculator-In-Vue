@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const current = ref('')
 
 function clear() {
-	current = ''
+	current.value = ''
 }
 
 function sign() {
