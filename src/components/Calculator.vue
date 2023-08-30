@@ -19,6 +19,12 @@ function percent() {
 function append(number) {
 	current.value = `${current.value}${number}`
 }
+
+function dot(number) {
+	if(current.value.indexOf('.') === -1){
+		append('.')
+	}
+}
 </script>
 
 <template>
@@ -43,7 +49,7 @@ function append(number) {
 		<div @click="append('3')" class="btn">3</div>
 		<div @click="append('+')" class="btn operator">+</div>
 		<div @click="append('0')" class="btn zero">0</div>
-		<div class="btn">.</div>
+		<div @click="dot" class="btn">.</div>
 		<div class="btn operator">=</div>
 		<div class="btn"></div>
 	</div> 	
