@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue'
+
 function clear() {
 	current = ''
 }
