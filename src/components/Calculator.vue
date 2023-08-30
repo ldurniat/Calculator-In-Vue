@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 
 const current = ref('')
+const history = []
 
 function clear() {
 	current.value = ''
