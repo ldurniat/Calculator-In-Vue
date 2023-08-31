@@ -35,6 +35,11 @@ function equal() {
 	solve.value   = solve.value + `${current.value}`
 	history.push(solve.value)
 }
+
+function histories() {
+	state.value   = false
+	current.value = history.value 
+}
 </script>
 
 <template>
@@ -70,7 +75,7 @@ function equal() {
 		<div @click="append('0')" class="btn zero">0</div>
 		<div @click="dot" class="btn">.</div>
 		<div @click="equal" class="btn operator">=</div>
-		<div class="btn">history</div>
+		<div @click="histories" class="btn">history</div>
 	</div> 	
 </template>
 
