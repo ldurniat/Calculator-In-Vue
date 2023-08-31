@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const current = ref('')
 const history = []
-const solve   = ''
+const solve   = ref('')
 
 function clear() {
 	current.value = ''
@@ -29,10 +29,10 @@ function dot() {
 }
 
 function equal() {
-	solve         = current.value + '=' 
+	solve.value   = current.value + '=' 
 	current.value = eval(current.value)
-	solve         = solve + `${current.value}`
-	history.push(solve)
+	solve.value   = solve.value + `${current.value}`
+	history.push(solve.value)
 }
 </script>
 
