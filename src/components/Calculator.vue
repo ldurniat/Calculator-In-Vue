@@ -7,6 +7,7 @@ const solve   = ref('')
 const state   = ref(true)
 
 function clear() {
+	state.value   = true
 	current.value = ''
 }
 
