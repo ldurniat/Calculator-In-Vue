@@ -45,7 +45,7 @@ function equal() {
 			</div>
 			<div v-else>
 				<ul>
-					<li v-for="hist in history">
+					<li v-for="(hist, index) in history" :key="index">
 						{{ hist }}
 					</li>
 				</ul>
