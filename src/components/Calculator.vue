@@ -40,7 +40,16 @@ function equal() {
 <template>
 	<div class="calculator">
 		<div class="display">
-			{{ current || 0 }}
+			<div v-if="state">
+				{{ current || 0 }}
+			</div>
+			<div v-else>
+				<ul>
+					<li v-for="hist in history">
+						{{ hist }}
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div @click="clear" class="btn">C</div>
 		<div @click="sign" class="btn operator">+/-</div>
